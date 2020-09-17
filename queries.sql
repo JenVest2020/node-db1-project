@@ -9,10 +9,9 @@ SELECT *
 FROM Suppliers
 WHERE SupplierID = 11;
 -- List first 10 orders placed, sorted descending by the order date
-SELECT OrderDate
+SELECT TOP 10 *
 FROM Orders 
-ORDER BY OrderDate
--- LIMIT 10;
+ORDER BY OrderDate desc;
 -- Find all customers that live in London, Madrid, or Brazil
 SELECT *
 FROM Customers
